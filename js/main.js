@@ -77,12 +77,18 @@ window.onload = () => {
         fx.setText(phrases[counter]).then(() => {
             setTimeout(next, 800)
         })
-        fxMob.setText(phrases[counter]).then(() => {
-            setTimeout(next, 800)
-        })
         counter = (counter + 1) % phrases.length
     }
 
+    let counterMob = 0
+    const nextMob = () => {
+        fxMob.setText(phrases[counterMob]).then(() => {
+            setTimeout(nextMob, 800)
+        })
+        counterMob = (counterMob + 1) % phrases.length
+    }
+
     next();
+    nextMob();
 
 };

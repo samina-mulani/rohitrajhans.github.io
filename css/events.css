@@ -2,7 +2,7 @@
     background: url('../media/carouselbg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 90vh;
+    min-height: 92vh;
     padding-top: 30vh;
     text-align: center;
 }
@@ -22,6 +22,10 @@
     padding-right: 20vw;
     text-align: center;
     font-size: 2em;
+}
+
+.page-description p {
+    margin-bottom: 0;
 }
 
 @media all and (max-width: 768px) {
@@ -45,29 +49,35 @@
 /*************** EVENT SECTION ******************************/
 
 .event-section {
-    min-height: 90vh;
+    min-height: 92vh;
+    padding-bottom: 4vh;
 }
 
 .odd-section {
     color: black;
-    background: white;
+    background: url('../media/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .odd-section hr {
     border-top: 1px solid #e5e5e5 !important;
 }
 .even-section {
-    background: #1e2529;
+    background: url('../media/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #f5f5f5;
 }
 
 .event-title {
-    font-size: 3.5em;
+    font-size: 2.5em;
     margin-top: 5vh;
 }
 
 .event-body {
-    font-size: 1.5em;
+    display: block;
+    font-size: 1.3em;
     margin-top: 3vh;
 }
 .event-image-container {
@@ -76,4 +86,8 @@
 .event-image {
     max-height: 35vh;
     max-width: 100%;
+}
+
+.contact-section {
+    background: white;
 }

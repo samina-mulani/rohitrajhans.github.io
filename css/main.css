@@ -1,12 +1,21 @@
 body {
     padding: 0;
-    padding-top: 10vh;
+    padding-top: 8vh;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*********** NAVBAR ***************/
 .navbar {
     background: #f5f5f5;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.navbar ul li a{
+    margin-top: 2vh !important;
 }
 
 @media (max-width: 1024px) {
@@ -47,11 +56,18 @@ body {
 }
 
 .container-fluid {
-    min-height: 10vh;
+    min-height: 8vh;
 }
 
 .navbar-toggle span {
     background: black;;
+}
+
+@media all and (min-width: 768px) {
+.navbar .nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    }
 }
 
 .navbar .nav li a {
@@ -79,26 +95,26 @@ body {
     /* background: url('../media/carouselbg.png'); */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 92vh;
 }
 
 .carousel-1 {
-    height: 90vh;
+    height: 92vh;
     background: url('../media/carouselbg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .carousel-2 {
-    height: 90vh;
+    height: 92vh;
     background: url('../media/ml-sig.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .carousel-3 {
-    height: 90vh;
-    background: url('../media/checkmate.jpg');
+    height: 92vh;
+    background: url('../media/stock_market_simulation.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -141,6 +157,7 @@ body {
     font-size: 6em;
     text-transform: uppercase;
     color: #E1F5FE;
+    font-family: 'Monoton', cursive;
 }
 
 @supports (-webkit-background-clip: text) {
@@ -187,7 +204,7 @@ body {
     }
 
     .mobile-container {
-        height: 90vh;
+        height: 92vh;
         widows: 100vw;
         padding-top: 40vh;
         text-align: center;
@@ -214,7 +231,7 @@ body {
     }
 
     #mob-carousel-3 {
-        background: url('../media/checkmate.jpg');
+        background: url('../media/stock_market_simulation.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -225,7 +242,7 @@ body {
 }
 
 .nav-carousel-left {
-    margin-top: 70vh;
+    margin-top: 78vh;
 }
 
 .nav-carousel>div {
@@ -235,7 +252,7 @@ body {
 
 .nav-carousel .carousel-icon {
     position: absolute;
-    color: black;
+    color: #5c5b5b;
     top: 5px;
     left: 60px;
 }
@@ -263,7 +280,7 @@ body {
 /********************* SECTIONS *******************/
 
 .section {
-    /* min-height: 90vh; */
+    min-height: 90vh;
     padding: 3vh;
 }
 
@@ -278,8 +295,11 @@ body {
     width: 250px;
 }
 
-#about {
-    min-height: 90vh;
+#about, #achievements {
+    background: url('../media/bg3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 92vh;
 }
 
 #about div {
@@ -294,8 +314,11 @@ body {
 }
 
 #events {
-    background: #1e2529;
-    min-height: 90vh;
+    /* background: #1e2529; */
+    background: url('../media/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 92vh;
     color: #f5f5f5;
 }
 
@@ -320,7 +343,7 @@ body {
 }
 
 .event-body {
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding-top: 1.5vh;
     display: flex;
 }
@@ -370,7 +393,7 @@ hr {
 }
 
 #postholders {
-    min-height: 90vh;
+    min-height: 92vh;
 }
 
 .postholders-container {
@@ -413,6 +436,38 @@ hr {
     font-size: 3em !important;
     font-weight: 800;
     padding-bottom: 0.4em;
+    font-family: 'Monoton', cursive;
+}
+
+.achievements-container {
+    min-height: 90vh;
+    padding-top: 5vh;
+}
+
+.event-section {
+    min-height: 90vh;
+}
+
+.achievement-image {
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.achievement div {
+    padding: 0 1vw;
+}
+
+.achievement-body {
+    font-size: 1.7em;
+}
+
+.odd-achievement {
+    flex-direction: row-reverse;
 }
 
 @media all and (max-width: 768px) {
@@ -442,7 +497,7 @@ hr {
     display: flex;
     justify-content: space-around;
     padding: 4vh 20vw;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
     background: #1e2529;
     color: #f5f5f5;
     flex-flow: row wrap;
@@ -459,17 +514,15 @@ hr {
 
 .follow-us ul li {
     list-style-type: none;
-    padding-top: 0.6vh;
+    padding: 0 0.1vw;
+    display: inline-block;
 }
 
 @media all and (max-width: 768px) {
     .contact-section {
-        height: 90vh;
+        height: 92vh;
     }
     .contact-section > div {
         width: 100%;
-    }
-    .follow-us ul li {
-        display: inline-block;
     }
 }
