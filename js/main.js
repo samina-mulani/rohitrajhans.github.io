@@ -1,4 +1,7 @@
 window.onload = () => {
+    document.getElementById('page-loader').style.display = 'none';
+    document.getElementById('main-container').style.display = 'block';
+      
     const phrases = [
         '#Bit_by_Bit',
         'Building the future'
