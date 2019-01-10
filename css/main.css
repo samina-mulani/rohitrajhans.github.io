@@ -63,10 +63,17 @@ body {
     background: black;;
 }
 
+.navbar-header img {
+    width: 4em !important;
+}
+
 @media all and (min-width: 768px) {
 .navbar .nav>li>a {
     padding-top: 8px;
     padding-bottom: 8px;
+    }
+    .navbar-header img {
+        width: 6em !important;
     }
 }
 
@@ -88,6 +95,7 @@ body {
     background: #40c4ff;
     border-radius: 40px;
 }
+
 
 /*********************** CAROUSEL ***********************/
 
@@ -296,7 +304,7 @@ body {
 }
 
 #about, #achievements {
-    background: url('../media/bg3.png');
+    background: url('../media/bg3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 92vh;
