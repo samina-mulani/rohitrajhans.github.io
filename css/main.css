@@ -350,13 +350,18 @@ body {
 }
 
 .event-footer {
-    /* color:  */
     font-size: 1.2em;
 }
 
-.event-image {;
+.event-image {
     max-height: 28vh;
     max-width: 60vw;
+}
+@-moz-document url-prefix() {
+    .event-image {
+        max-height: 400px !important;
+        max-width: 600px !important;
+    }
 }
 
 .event-body {
@@ -466,8 +471,8 @@ hr {
 }
 
 .achievement-image {
-    max-width: 20vw;
-    max-height: 20vh;
+    max-width: 100%;
+    max-height: 30vh;
 }
 
 .achievement {
@@ -507,6 +512,14 @@ hr {
     }
     #achievements .section-title {
         font-size: 2.5em !important;
+    }
+    .achievement {
+        display: block;
+        text-align: center;
+    }
+    .achievement-image {
+        max-height: 20vh;
+        margin-bottom: 2vh;
     }
 }
 

@@ -49,8 +49,8 @@
 }
 
 .achievement-image {
-    max-width: 20vw;
-    max-height: 20vh;
+    max-width: 100%;
+    max-height: 30vh;
 }
 
 .achievement {
@@ -61,13 +61,22 @@
 .achievement div {
     padding: 0 1vw;
 }
+@media all and (max-width:768px) {
+    .achievement {
+        display: block;
+        text-align: center !important;
+    }
+    .achievement-image {
+        max-height: 20vh;
+        margin-bottom: 2vh;
+    }
+    .achievement div {
+        padding: 0;
+    }
+}
 
 .achievement-body {
     font-size: 1.7em;
-}
-
-.odd-achievement {
-    flex-direction: row-reverse;
 }
 
 .contact-section {
