@@ -1,0 +1,180 @@
+<!-- Template for navigation bar-->
+
+<script id="navbar_template" type="text/html">
+    
+        <div class="navbar-container">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"> <img src="media/acm_logo-17.png" width="80px" alt="">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                           {{#each navElements}}
+                            <li><a href="#">{{{this}}}</a></li>
+                            {{/each}}
+                       </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+</script>
+
+
+<!-- Template for achievements.html -->
+
+<script type="text/html" id = "ach_template">
+
+    <div class="event-landing-container">
+            <div class="page-title"><span>Achievements</span></div>
+        </div>
+
+    {{#ch text}}
+               {{#if1 @index}} <div class="achievement odd-achievement">
+                {{else}} <div class="achievement even-achievement">{{/if1}}
+                    <div class="achievement-image-container">
+                        <img class="achievement-image" src="{{link}}" alt="">
+                    </div>
+                    <div class="achievement-body">
+                        <p>{{text}}</p>
+                    </div>
+                </div>
+                <hr>
+    {{/ch}}
+            
+</script>
+
+<!-- Template for members.html -->
+
+<script type="text/html" id="mem_template">
+    
+    <div class="members-container container">
+                <span class="members-container-title">
+                    <h1>BITS-ACM Members 2018-19</h1> <br>
+                </span>
+                <span>
+                    <h3>Postholders</h3>
+                </span>
+                <hr><br>
+                <div class="postholders-members-container">
+                    {{#each postholders}}
+                    <div id="postholder-{{@index}}" class="member-container">
+                        <img src="{{linkp}}" alt="no image" class="postholder-img-container">
+                        <p class="img-caption">
+                            {{post}}
+                            <br>
+                            {{name}}
+                        </p>
+                    </div>
+                    {{/each}}
+                </div>
+
+                <br>
+                <h3> Core Team Members</h3>
+                <hr> <br>
+                <div class="core-team-container postholders-members-container">
+                    {{#each members}}
+                    <div id="member-{{@index}}" class="member-container">
+                        <img src="{{linkm}}" alt="no image" class="postholder-img-container">
+                        <div class="img-caption">
+                            {{name}}
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+
+
+</script>
+
+
+<!-- Template for contact section type 1 -->
+
+<script type="text/html" id="contact_template1">
+
+    <div class="contact-section odd-section">   
+            <div class="about-footer">
+                <div class="about-footer-title">
+                    <h4>BITS-ACM</h4>
+                    <hr>
+                    <p>This year BITS-ACM student chapter has 70 core team members and has nurtured more than 650 alumni since
+                            its inception in 2008. </p>
+                </div>
+            </div>
+            <div class="follow-us">
+                <h4> Follow us on </h4>
+                <hr>
+                <ul>
+                    <li><a href="https://www.facebook.com/bitsacm/"> <img src="./media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/bitsacm"> <img src="./media/twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://github.com/bitsacm"><img src="./media/github-dark.png" alt=""></a></li>
+                    <li><a href="https://bitsacm.github.io/"> <img src="./media/blogger.png" alt="blog"></a></li>
+                </ul>
+                <hr>
+            </div>
+
+            <div class="contact-us">
+                <div>
+                    <h4> Where to find us </h4>
+                    <p><img src="./media/blue-location.png" height="16px" width="16px" alt=""> BITS Pilani, Vidyavihar
+                        Campus, Pilani, Rajasthan, 333031 </p>
+                    <hr>
+                </div>
+                <div>
+                    <h4> Email us at </h4>
+                    <a class="email-link" href="mailto:bitsacm.acm@gmail.com"><p> <img src="./media/gmail-logo.png" alt=""> bitsacm.acm@gmail.com </p></a>
+                </div>
+            </div>
+        </div>
+</script>
+
+
+<!-- Template for contact section type 2 -->
+
+
+<script type="text/html" id="contact_template2">
+
+    <div class="contact-section contact-section-even">   
+            <div class="about-footer">
+                <div class="about-footer-title">
+                    <h4>BITS-ACM</h4>
+                    <hr>
+                    <p>This year BITS-ACM student chapter has 70 core team members and has nurtured more than 650 alumni since
+                            its inception in 2008. </p>
+                </div>
+            </div>
+            <div class="follow-us">
+                <h4> Follow us on </h4>
+                <hr>
+                <ul>
+                    <li><a href="https://www.facebook.com/bitsacm/"> <img src="./media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/bitsacm"> <img src="./media/twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://github.com/bitsacm"><img src="./media/github-light.png" alt=""></a></li>
+                    <li><a href="https://bitsacm.github.io/"> <img src="./media/blogger.png" alt="blog"></a></li>
+                </ul>
+                <hr>
+            </div>
+
+            <div class="contact-us">
+                <div>
+                    <h4> Where to find us </h4>
+                    <p><img src="./media/blue-location.png" height="16px" width="16px" alt=""> BITS Pilani, Vidyavihar
+                        Campus, Pilani, Rajasthan, 333031 </p>
+                    <hr>
+                </div>
+                <div>
+                    <h4> Email us at </h4>
+                    <a class="email-link" href="mailto:bitsacm.acm@gmail.com"><p> <img src="./media/gmail-logo.png" alt=""> bitsacm.acm@gmail.com </p></a>
+                </div>
+            </div>
+        </div>
+</script>
